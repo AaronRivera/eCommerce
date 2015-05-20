@@ -53,3 +53,5 @@ C:\Users\dustin\Documents\GitHub\eCommerce\eCommerce\eCommerce\bin\Microsoft.Owi
 C:\Users\dustin\Documents\GitHub\eCommerce\eCommerce\eCommerce\obj\Debug\eCommerce.csprojResolveAssemblyReference.cache
 C:\Users\dustin\Documents\GitHub\eCommerce\eCommerce\eCommerce\obj\Debug\eCommerce.dll
 C:\Users\dustin\Documents\GitHub\eCommerce\eCommerce\eCommerce\obj\Debug\eCommerce.pdb
+C:\Users\dustin\Documents\GitHub\eCommerce\eCommerce\eCommerce\obj\Debug\eCommerce.Migrations.initial.resources
+C:\Users\dustin\Documents\GitHub\eCommerce\eCommerce\eCommerce\obj\Debug\eCommerce.csproj.GenerateResource.Cache

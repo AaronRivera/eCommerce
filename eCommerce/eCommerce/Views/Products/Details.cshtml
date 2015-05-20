@@ -1,7 +1,6 @@
-﻿
-@*dont forget to declare the view's model on the first line!*@
+﻿@*dont forget to declare the view's model on the first line!*@
 @{
-    ViewBag.Title = "product name should go here";
+    ViewBag.Title = Model.Name;
 }
 
 <div class="row">
@@ -11,28 +10,32 @@
             Product Description
         </p>
         <p>
-            MSRP: <s>MSRP Price, formatted as currency</s>
+            MSRP: <s>MSRP as currency</s>
             <br/>
-            Our Price: <span class="price">Price, formatted as currency</span>
+            Our Price: <span class="price">Price as currency</span>
             
             @*if our price is less than the msrp price, display the following*@
-                <div>You save <span class="price">%savings ((unit price / msrp) * 100, round to 2 decimal points)%</span></div>
+                <div>You save <span class="price">
+                    
+                    Percent savings between our price and the MRSP
+                    </span></div>
             
         </p>
     </div>
     <div class="col-md-4 product-images">
-        <img class="img-rounded main-image" src="the first image in product images url" />
+        <img class="img-rounded main-image" src="display the imageUrl for the first image in ProductImages" />
         <div class="thumbnails text-center">
             @*for each product image for the product....*@
-                <div class="thumbnail">
-                    <img src="url of the image" />
-                </div>
-            
+   
+                    <div class="thumbnail">
+                        <img src="set the imageUrl" />
+                    </div>
+
         </div>
     </div>
 </div>
 <div>
     @*link to go back to the main products list*@
-    <a href="#" class="btn btn-default">Back to Products</a>
+    <a href="@Url.Action("Index", "Products")" class="btn btn-default">Back to Products</a>
 </div>
 

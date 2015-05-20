@@ -1,5 +1,4 @@
-﻿@model object
-@*on the first line we declare our view's model, this is the object that dictates the type of the "Model" property, and is primarily how we pass data from the controller to the view*@
+﻿@*on the first line we declare our view's model, this is the object that dictates the type of the "Model" property, and is primarily how we pass data from the controller to the view*@
 @{
     ViewBag.Title = "Index";
 }
@@ -8,22 +7,22 @@
 
 <div class="row">
     @*foreach product in the list of product (Model), display this block... *@
+        <div class="col-md-4 text-center product-listing">
+            @*link to go to the product detail page for this particular product.  We have this because the user should be able to click on the image, product name or price to go see more information, they should not HAVE to click the button*@
+            <a href="Products controller, Details action, use the productID as the Id" class="product-listing-link">
+                @*display the image src for the first product image in the database*@
+                <img class="img-thumbnail" src="Use the ImageUrl of the first ProductImage" />
+                <div class="name">
+                    <strong>Product Name</strong>
+                </div>
+                <div class="price">
+                    Price as currency
+                </div>
+            </a>
+            @*link to go to the product detail page for this particular product*@
+            <a href="Products controller, Details action, use the productID as the Id" class="btn btn-default">More Info</a>
 
-    <div class="col-md-4 text-center product-listing">
-           @*link to go to the product detail page for this particular product.  We have this because the user should be able to click on the image, product name or price to go see more information, they should not HAVE to click the button*@
-           <a href="#" class="product-listing-link">
-               @*display the image src for the first product image in the database*@
-               <img class="img-thumbnail" src="image source goes here" />
-               <div class="name">
-                   <strong>Product Name</strong>
-               </div>
-               <div class="price">
-                   Product price, formatted as currency
-               </div>
-           </a>
-           @*link to go to the product detail page for this particular product*@
-           <a href="#" class="btn btn-default">More Info</a>
-         
-       </div>
-   
+        </div>
+    
+
 </div>
